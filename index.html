@@ -1,1 +1,56 @@
 <!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Portfolio profesional de animación y arte 3D.">
+<title>Portfolio 3D — Nombre Apellido</title>
+<style>
+:root{--bg:#f4f3ef;--paper:#fff;--ink:#20211e;--muted:#777970;--line:#dedfd7;--accent:#536b3b;--max:1120px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,Arial,sans-serif}
+a{color:inherit;text-decoration:none}a:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+.wrap{width:min(var(--max),calc(100% - 48px));margin:auto}
+header{position:sticky;top:0;z-index:5;background:rgba(244,243,239,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{font-size:.9rem;font-weight:800;letter-spacing:.08em}.logo span{color:var(--accent)}
+.links{display:flex;gap:26px;font-size:.85rem;color:var(--muted)}.links a:hover{color:var(--accent)}
+.hero{padding:100px 0 90px;display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+.kicker{font-size:.73rem;text-transform:uppercase;letter-spacing:.16em;font-weight:700;color:var(--accent)}
+h1{font-size:clamp(3.2rem,7vw,6.4rem);letter-spacing:-.075em;line-height:.96;margin:18px 0 24px;font-weight:700}
+h1 span{color:var(--accent)}.lead{max-width:520px;color:#606159;font-size:1.08rem}
+.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;padding:11px 17px;border:1px solid var(--ink);font-size:.87rem;font-weight:650;transition:.2s}
+.btn.primary{background:var(--ink);color:white}.btn:hover{transform:translateY(-2px)}
+.hero-visual{aspect-ratio:4/4.4;background:#e5e6dc;position:relative;overflow:hidden;display:grid;place-items:center}
+.hero-visual:before{content:"";position:absolute;width:57%;height:72%;background:linear-gradient(145deg,#b7c0a7,#6e7e61 55%,#394532);border-radius:48% 48% 5% 5%;transform:rotate(9deg);box-shadow:30px 30px 0 rgba(32,33,30,.07)}
+.hero-visual:after{content:"3D / FORMA / LUZ";position:absolute;bottom:20px;left:20px;font-size:.68rem;letter-spacing:.16em;color:#3f4d35}
+.hero-visual .label{position:absolute;right:18px;top:18px;font-size:.68rem;letter-spacing:.12em;color:#555b4d}
+section{padding:78px 0;border-top:1px solid var(--line)}.head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:30px}
+h2{font-size:clamp(2rem,4vw,3.1rem);line-height:1.08;letter-spacing:-.055em;margin:9px 0 0}.note{max-width:390px;color:var(--muted);font-size:.9rem}
+.projects{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.project{background:var(--paper);border:1px solid var(--line)}.project-image{aspect-ratio:16/10;background:#e3e4db;display:grid;place-items:center;text-align:center;color:#5d6853;padding:20px;overflow:hidden}
+.project-image strong{display:block;font-size:1.6rem;letter-spacing:-.04em;color:#303b2a}.project-image span{font-size:.7rem;letter-spacing:.13em;text-transform:uppercase}
+.project-info{padding:20px 22px 23px}.project-info h3{font-size:1.1rem;margin:0 0 5px}.project-info p{font-size:.88rem;color:var(--muted);margin:0}
+.tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:14px}.tag{font-size:.7rem;padding:3px 8px;border:1px solid var(--line);color:#5f6258}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:64px}.copy{max-width:590px;color:#5d5e57}.copy p:first-child{margin-top:0}
+.skills{display:grid;grid-template-columns:1fr 1fr;gap:10px}.skill{padding:15px 16px;background:var(--paper);border:1px solid var(--line)}.skill strong{display:block;font-size:.9rem}.skill span{font-size:.78rem;color:var(--muted)}
+.timeline{border-top:1px solid var(--line)}.item{display:grid;grid-template-columns:180px 1fr;gap:28px;padding:22px 0;border-bottom:1px solid var(--line)}.item time{color:var(--accent);font-size:.85rem}.item h3{margin:0 0 4px;font-size:1rem}.item p{margin:0;color:var(--muted);font-size:.88rem}
+.contact{padding:34px;background:var(--paper);border:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:28px}.contact h2{max-width:580px}.contact p{color:var(--muted)}
+footer{padding:25px 0;color:var(--muted);font-size:.78rem}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding:65px 0;gap:32px}.hero-visual{aspect-ratio:16/10}.projects,.about{grid-template-columns:1fr}.head{align-items:start;flex-direction:column}.item{grid-template-columns:1fr;gap:4px}.contact{align-items:start;flex-direction:column}}
+@media(max-width:480px){.wrap{width:calc(100% - 30px)}nav{height:auto;min-height:68px;align-items:flex-start;flex-direction:column;padding:14px 0;gap:10px}.links{width:100%;justify-content:space-between;gap:8px;font-size:.76rem}.hero{padding-top:48px}h1{font-size:3.4rem}}
+</style></head>
+<body>
+<header><nav class="wrap" aria-label="Navegación principal"><a class="logo" href="#inicio">NOMBRE<span>·</span>3D</a><div class="links"><a href="#proyectos">Proyectos</a><a href="#sobre-mi">Sobre mí</a><a href="#cv">CV</a><a href="#contacto">Contacto</a></div></nav></header>
+<main>
+<div class="wrap hero" id="inicio"><div><div class="kicker">Portfolio · Animación 3D</div><h1>Ideas en<br><span>tres</span><br>dimensiones.</h1><p class="lead">Soy <strong>Nombre Apellido</strong>, artista 3D en formación. Me interesa crear imágenes y mundos digitales combinando forma, materiales, iluminación y narrativa visual.</p><div class="buttons"><a class="btn primary" href="#proyectos">Ver proyectos ↓</a><a class="btn" href="#contacto">Contactar ↗</a></div></div><div class="hero-visual" role="img" aria-label="Composición abstracta minimalista inspirada en formas 3D"><span class="label">GENERALISTA 3D</span></div></div>
+<section id="proyectos"><div class="wrap"><div class="head"><div><div class="kicker">Selección de trabajos</div><h2>Proyectos destacados</h2></div><p class="note">Una selección de trabajos de modelado, texturizado, iluminación y creación de escenas. Sustituye los espacios por tus imágenes reales.</p></div><div class="projects">
+<article class="project"><div class="project-image"><div><strong>Proyecto 01</strong><span>Añade aquí tu render</span></div></div><div class="project-info"><h3>Escena e iluminación</h3><p>Descripción breve del objetivo, proceso y resultado del proyecto.</p><div class="tags"><span class="tag">Maya</span><span class="tag">Arnold</span><span class="tag">Iluminación</span></div></div></article>
+<article class="project"><div class="project-image"><div><strong>Proyecto 02</strong><span>Añade aquí tu entorno 3D</span></div></div><div class="project-info"><h3>Entorno digital</h3><p>Diseño de una escena, composición y creación de atmósfera.</p><div class="tags"><span class="tag">Unreal Engine</span><span class="tag">Materiales</span></div></div></article>
+<article class="project"><div class="project-image"><div><strong>Proyecto 03</strong><span>Añade aquí tu modelo</span></div></div><div class="project-info"><h3>Modelado y texturizado</h3><p>Desarrollo de un objeto o personaje desde el modelo hasta el acabado.</p><div class="tags"><span class="tag">Modelado</span><span class="tag">Substance 3D</span></div></div></article>
+<article class="project"><div class="project-image"><div><strong>Proyecto 04</strong><span>Añade aquí un fotograma</span></div></div><div class="project-info"><h3>Animación 3D</h3><p>Proyecto narrativo o pieza de animación con enfoque en el acabado visual.</p><div class="tags"><span class="tag">Animación</span><span class="tag">Render</span></div></div></article>
+</div></div></section>
+<section id="sobre-mi"><div class="wrap"><div class="head"><div><div class="kicker">Perfil</div><h2>Sobre mí</h2></div></div><div class="about"><div class="copy"><p>Estudio Animación 3D y disfruto trabajando en las distintas etapas de creación de una imagen: desde construir modelos y preparar materiales hasta iluminar y presentar una escena.</p><p>Como generalista 3D, quiero seguir ampliando mis conocimientos técnicos y artísticos, trabajar en equipo y desarrollar proyectos que combinen atención al detalle con una intención visual clara.</p><p><strong>Intereses:</strong> cine, animación, videojuegos, diseño de entornos y narrativa visual.</p></div><div class="skills"><div class="skill"><strong>Modelado 3D</strong><span>Objetos y entornos</span></div><div class="skill"><strong>Materiales y texturas</strong><span>Substance 3D Painter</span></div><div class="skill"><strong>Iluminación y render</strong><span>Maya · Arnold</span></div><div class="skill"><strong>Tiempo real</strong><span>Unreal Engine</span></div><div class="skill"><strong>Animación y rigging</strong><span>Añade tus herramientas</span></div><div class="skill"><strong>Composición y edición</strong><span>DaVinci Resolve · otras</span></div></div></div></div></section>
+<section id="cv"><div class="wrap"><div class="head"><div><div class="kicker">Formación y experiencia</div><h2>Currículum</h2></div><p class="note">Completa los datos con tus fechas, proyectos y experiencia reales.</p></div><div class="timeline"><div class="item"><time>Actualidad</time><div><h3>Estudios de Animación 3D</h3><p>La Salle · Barcelona. Añade el curso y las fechas correspondientes.</p></div></div><div class="item"><time>Proyectos académicos</time><div><h3>Producción y creación 3D</h3><p>Trabajo individual y en equipo en escenas, personajes y piezas visuales.</p></div></div><div class="item"><time>Experiencia adicional</time><div><h3>Proyectos personales y publicaciones</h3><p>Añade encargos, colaboraciones, modelos publicados o premios si corresponde.</p></div></div></div><div class="buttons"><a class="btn primary" href="CV.pdf" download>Descargar CV en PDF ↓</a></div></div></section>
+<section id="contacto"><div class="wrap"><div class="contact"><div><div class="kicker">Contacto</div><h2>¿Creamos algo juntos?</h2><p>Disponible para colaboraciones, prácticas y oportunidades junior.</p></div><div class="buttons"><a class="btn primary" href="mailto:tu.email@ejemplo.com">Enviar email ↗</a><a class="btn" href="https://www.artstation.com/" target="_blank" rel="noreferrer">ArtStation ↗</a><a class="btn" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div></div></div></section>
+</main><footer><div class="wrap foot"><span>© <span id="year"></span> Nombre Apellido · Portfolio 3D</span><span>Diseño sencillo, enfoque en el trabajo.</span></div></footer><script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body></html>
